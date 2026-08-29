@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ra7-Doj</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app" class="doj-hidden">
+    <div class="tablet-frame">
+
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="brand-mark"><i class="fa-solid fa-scale-balanced"></i></div>
+                <div class="brand-text">
+                    <span class="brand-title" id="brandSystem">Ministry of Justice</span>
+                    <span class="brand-sub" id="brandServer">VanTown</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" id="sidebarNav"></nav>
+
+            <div class="sidebar-footer">
+                <button class="lang-toggle" id="langToggle" type="button">
+                    <i class="fa-solid fa-language"></i> <span id="langToggleText">العربية</span>
+                </button>
+                <div class="user-chip">
+                    <i class="fa-solid fa-id-badge"></i>
+                    <div class="user-chip-text">
+                        <span id="userName">—</span>
+                        <span id="userRole" class="user-role-tag">Citizen</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <header class="topbar">
+                <h1 id="pageTitle">Home</h1>
+                <button class="btn-close" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+            </header>
+
+            <div class="view-area" id="viewArea"></div>
+        </main>
+    </div>
+</div>
+
+<div id="modalLayer"></div>
+<div id="toastLayer" class="toast-layer"></div>
+
+<div id="printArea" class="print-only"></div>
+
+<script src="js/locale.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
